@@ -2,7 +2,7 @@ module Landable
   module PagesHelper
     def landable(page = current_page)
       return Landable::NullPageDecorator.new if page.nil?
-      @landable ||= ::PageDecorator.new(page)
+      @landable ||= Landable::PageDecorator.new(page)
     end
 
     def current_page

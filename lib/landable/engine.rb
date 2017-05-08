@@ -55,7 +55,7 @@ module Landable
         include Landable::VariablesConcern
 
         # helpers
-        helper Landable::PagesHelper
+        helper ::Landable::PagesHelper
 
         # tracking
         if Landable.configuration.traffic_enabled
